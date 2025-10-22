@@ -16,6 +16,7 @@ Deployed Live Demo 👉 [**View Live on Netlify**](https://verdant-druid-f95133.
 - 💨 Configured **Tailwind CSS** for utility-first styling  
 - 🗂️ Organized folder structure:
 
+
 src/
 ├── components/
 ├── context/
@@ -23,6 +24,8 @@ src/
 ├── pages/
 ├── App.jsx
 ├── main.jsx
+
+
 
 
 ### 🧠 **Task 2 – Component Architecture**
@@ -77,24 +80,30 @@ src/
 ## ⚙️ **Setup Instructions**
 
 ### 1️⃣ **Clone the repository**
-```bash
+
 git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME.git
 cd YOUR_REPO_NAME
 
-2️⃣ Install dependencies
+
+###2️⃣ Install dependencies
 npm install
 
-3️⃣ Run development server
+
+###3️⃣ Run development server
 npm run dev
 
-4️⃣ Build for production
+
+###4️⃣ Build for production
 npm run build
 
-5️⃣ Deploy
+
+###5️⃣ Deploy
+
 
 Deployed automatically via Netlify CI/CD
 Build command → npm run build
 Publish directory → dist/
+
 
 🧭 Folder Structure
 src/
@@ -115,6 +124,7 @@ src/
 ├── main.jsx
 └── index.css
 
+
 💡 Highlights
 
 ✅ Follows React best practices and clean code architecture
@@ -126,6 +136,7 @@ src/
 🧠 Demonstrates understanding of useState, useEffect, useContext, and custom hooks
 
 🌍 API integration with graceful fallback (loading, error, search, pagination)
+
 
 
 🌐 Live Demo
