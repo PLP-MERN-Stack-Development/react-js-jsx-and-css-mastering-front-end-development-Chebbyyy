@@ -1,78 +1,134 @@
-# my-react-js-app
+# 🌟 **React Task Manager — Front-End Development Project**
 
-A small React + Vite starter with Tailwind, dark mode, a task manager, and a posts listing (JSONPlaceholder).
+## 🚀 **Overview**
 
-## Quick start
+This project is built as part of **Week 3: React.js, JSX, and Tailwind CSS – Mastering Front-End Development**.  
+It demonstrates the complete front-end development workflow — from project setup and component architecture to state management, API integration, and responsive UI design.
 
-Install and run the dev server:
+Deployed Live Demo 👉 [**View Live on Netlify**](https://verdant-druid-f95133.netlify.app/)
 
-```sh
+---
+
+## 🧩 **Key Features**
+
+### 🧱 **Task 1 – Project Setup**
+- ⚙️ Built with **Vite** for a fast React development environment  
+- 💨 Configured **Tailwind CSS** for utility-first styling  
+- 🗂️ Organized folder structure:
+
+src/
+├── components/
+├── context/
+├── hooks/
+├── pages/
+├── App.jsx
+├── main.jsx
+
+
+### 🧠 **Task 2 – Component Architecture**
+- 🔘 **Reusable Components**:
+- Button (Primary, Secondary, Danger)
+- Card (for clean content display)
+- Navbar (site navigation)
+- Footer (with links and copyright)
+- 📦 Components accept **props** for reusability and customization
+- 🧩 Implemented a consistent layout including Navbar and Footer
+
+### ✅ **Task 3 – State Management & Hooks**
+- 🗒️ **Task Manager** functionality:
+- Add new tasks  
+- Mark tasks as completed  
+- Delete tasks  
+- Filter tasks (**All**, **Active**, **Completed**)  
+- ⚙️ **Hooks Used**:
+- `useState` for state handling  
+- `useEffect` for side effects and persistence  
+- `useContext` for theme (Light/Dark mode) management  
+- 💾 Created a custom hook `useLocalStorage` for task persistence
+
+### 🌐 **Task 4 – API Integration**
+- 🔗 Fetched posts from **JSONPlaceholder API**
+- 📃 Displayed data in a responsive card layout
+- 🕒 Implemented loading and error states
+- 🔍 Added **search with debounce**
+- 📜 Pagination + optional infinite scroll using `IntersectionObserver`
+
+### 🎨 **Task 5 – Tailwind Styling**
+- 📱 Fully **responsive** on mobile, tablet, and desktop  
+- 🌗 **Light/Dark mode** toggle implemented with context and Tailwind dark classes  
+- 💫 Smooth transitions and hover animations  
+- 💎 Clean, modern, accessible design
+
+---
+
+## 🛠️ **Tech Stack**
+
+| Category | Technology |
+|-----------|-------------|
+| Framework | React (Vite) |
+| Styling | Tailwind CSS |
+| Routing | React Router |
+| State | React Hooks & Context API |
+| API | JSONPlaceholder |
+| Deployment | Netlify |
+
+---
+
+## ⚙️ **Setup Instructions**
+
+### 1️⃣ **Clone the repository**
+```bash
+git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME.git
+cd YOUR_REPO_NAME
+
+###2️⃣ Install dependencies
 npm install
+
+###3️⃣ Run development server
 npm run dev
 
-Available scripts (see package.json):
+###4️⃣ Build for production
+npm run build
 
-npm run dev — start dev server
-npm run build — build for production
-npm run preview — preview production build
-npm run lint — run ESLint
-Features
-Light / dark theme using ThemeProvider
-Persistent tasks via useLocalStorage
-Task management UI (component + page)
-Posts listing with pagination and optional infinite scroll (JSONPlaceholder)
-Small set of reusable UI components (Button, Card, Skeleton, Navbar, Footer)
-Project structure (high level)
-src/App.jsx — main app & routes (component: App)
-src/main.jsx — app entry (wraps ThemeProvider)
-src/index.css — Tailwind imports & global styles
-src/App.css — example app styles
-src/context/ThemeContext.jsx — theme provider & hook (ThemeProvider, useTheme)
-src/hooks/useLocalStorage.js — localStorage sync hook (useLocalStorage)
-Pages:
-src/pages/Home.jsx — Home
-src/pages/ApiPage.jsx — ApiPage (posts)
-src/pages/TaskManager.jsx — TaskManager page
-Components:
-src/components/Navbar.jsx — Navbar
-src/components/Footer.jsx — Footer
-src/components/Button.jsx — Button
-src/components/Card.jsx — Card
-src/components/Skeleton.jsx — Skeleton
-src/components/TaskManager.jsx — reusable TaskManager component
-Notes
-Tailwind is configured in tailwind.config.js
-Vite config is vite.config.js
-PostCSS config: postcss.config.js
-ESLint config: eslint.config.js
-Entry HTML: index.html
-Demo
-https://verdant-druid-f95133.netlify.app/
+###5️⃣ Deploy
 
-Workspace files (quick links)
+Deployed automatically via Netlify CI/CD
+Build command → npm run build
+Publish directory → dist/
 
-.gitignore
-eslint.config.js
-index.html
-package.json
-postcss.config.js
-README.md
-tailwind.config.js
-vite.config.js
-public/
-src/App.css
-src/App.jsx — App
-src/index.css
-src/main.jsx
-src/assets/
-src/components/Button.jsx — Button
-src/components/Card.jsx — Card
-src/components/Footer.jsx — Footer
-src/components/Navbar.jsx — Navbar
-src/components/Skeleton.jsx — Skeleton
-src/components/TaskManager.jsx — component TaskManager
-src/context/ThemeContext.jsx — ThemeProvider, useTheme
-src/hooks/useLocalStorage.js — useLocalStorage
-src/pages/ApiPage.jsx — ApiPage
-src/pages/Home.jsx — Home
-src/pages/TaskManager.jsx — page TaskManager
+🧭 Folder Structure
+src/
+├── components/
+│   ├── Button.jsx
+│   ├── Card.jsx
+│   ├── Navbar.jsx
+│   └── Footer.jsx
+├── context/
+│   └── ThemeContext.jsx
+├── hooks/
+│   └── useLocalStorage.jsx
+├── pages/
+│   ├── Home.jsx
+│   ├── TaskManager.jsx
+│   └── ApiPage.jsx
+├── App.jsx
+├── main.jsx
+└── index.css
+
+💡 Highlights
+
+✅ Follows React best practices and clean code architecture
+
+🧩 Modular, reusable component design
+
+🌓 Dark mode with context and Tailwind integration
+
+🧠 Demonstrates understanding of useState, useEffect, useContext, and custom hooks
+
+🌍 API integration with graceful fallback (loading, error, search, pagination)
+
+
+🌐 Live Demo
+
+🚀 View the Deployed Application:
+👉 https://verdant-druid-f95133.netlify.app/
